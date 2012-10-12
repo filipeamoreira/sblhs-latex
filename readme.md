@@ -8,7 +8,7 @@ Your preamble should look like this:
 
 	%!TEX TS-program = xelatex
 	%!TEX encoding = UTF-8 Unicode
-	\documentclass{sbl-essay}
+	\documentclass{sblessay}
 
 	%User Info
 	\author{Your Name}
