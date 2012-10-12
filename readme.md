@@ -1,5 +1,7 @@
 # SBL Latex
 
+Please note: this is **not** the same package previously found at `http://svn.marshwiggle.net/sbllatex`.
+
 At this very early stage of development, this class is basically just a slightly altered `article` class document using the `biblatex-chicago` bibliography style (with a couple small changes). The current version works best when compiled with `xelatex` and `biber`.
 
 
