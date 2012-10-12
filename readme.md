@@ -1,6 +1,6 @@
 # SBL Latex
 
-At this very early stage of development, this class is basically just a slightly altered "article" class document using the biblatex-chicago bibliography style (with a couple small changes). The current version works best when compiled with xelatex and biber.
+At this very early stage of development, this class is basically just a slightly altered `article` class document using the `biblatex-chicago` bibliography style (with a couple small changes). The current version works best when compiled with `xelatex` and `biber`.
 
 
 ##Preamble
@@ -39,4 +39,4 @@ All the class really does is reformat the line spacing, page geometry, section h
 
 ##biblatex-sbl.sty
 
-The bibliography is handled by biblatex using biber as the backend—I'm sure you could do without biber, but why? The only function of biblatex-sbl.sty is to renew a few macros present in biblatex-chicago that are slightly different than what the bibaltex-chicago package defines. At the time of writing, the primary function is to add "shortjournal" and "shortseries" fields to footnotes to prevent the verbose output that is the default of bibaltex-chicago.
+The bibliography is handled by `biblatex` using `biber` as the backend—I'm sure you could do without `biber`, but why? The only function of `biblatex-sbl.sty` is to renew a few macros present in `biblatex-chicago` that are slightly different than what the `bibaltex-chicago` package defines. At the time of writing, the primary function is to add `shortjournal` and `shortseries` fields to footnotes to prevent the verbose output that is the default of `bibaltex-chicago`.
