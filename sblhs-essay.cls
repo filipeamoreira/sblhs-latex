@@ -14,7 +14,7 @@
 % fitness for a particular purpose.
 
 
-\ProvidesClass{sblessay}[2012/12/10 v.01 SBL Essay]
+\ProvidesClass{sblhs-essay}[2012/12/10 v.01 SBL Essay]
 
 %%	Load 12pt article class
   \LoadClass[12pt]{article}
