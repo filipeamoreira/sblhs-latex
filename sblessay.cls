@@ -20,13 +20,10 @@
   \LoadClass[12pt]{article}
 
 %%	Set page geometry, margins, etc.
-  \RequirePackage[letterpaper,
-				margin=.9in,
-				]{geometry}
+  \RequirePackage[letterpaper,margin=.9in,]{geometry}
 
 %%	Set double-spacing for the whole document		
 \RequirePackage{setspace}
-  %\linespread{2}
   \setstretch{2.1}
 
 
@@ -44,17 +41,17 @@
 
 %More Reasonable Quote Environment
 \renewenvironment{quote}
-                 {\list{}{\itemsep       \z@%
-                          \itemindent    \z@%
-                          \listparindent \z@%
-                          \leftmargin    0.5in%
-                          \rightmargin   0.5in%
-                          \partopsep     \z@%
-                          \topsep        0pt \@plus 0.5ex \@minus 0.5ex%
-                          \parsep        1.5ex \@plus 0.25ex}%
-                  \item\relax\singlespacing}
-                 {\endlist%
-                  \global\parindent 0.5in}
+  {\list{}{\itemsep    \z@%
+        \itemindent    \z@%
+        \listparindent \z@%
+        \leftmargin    0.5in%
+        \rightmargin   0.5in%
+        \partopsep     \z@%
+        \topsep        0pt \@plus 0.5ex \@minus 0.5ex%
+        \parsep        1.5ex \@plus 0.25ex}%
+  \item\relax\singlespacing}
+  {\endlist%
+  \global\parindent 0.5in}
 
 
 % Section headings
@@ -84,7 +81,7 @@
   {\em}}
 
 %Bibliography Style (based on biblatex-chicago)
-\RequirePackage{biblatex-sblms}
+\RequirePackage{biblatex-sblhs}
 
 %%New Title Page
 \renewcommand{\maketitle}{%
