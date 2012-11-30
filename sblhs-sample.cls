@@ -14,20 +14,20 @@
 % fitness for a particular purpose.
 
 
-\ProvidesClass{sblhs-essay}[2012/12/10 v.01 SBL Essay]
+\ProvidesClass{sblhs-sample}[2012/12/10 v.01 SBL Writing Sample]
 
-%%  Load 12pt article class
+%%	Load 12pt article class
   \LoadClass[12pt]{article}
 
-%%  Set page geometry, margins, etc.
+%%	Set page geometry, margins, etc.
   \RequirePackage[letterpaper,margin=.9in,]{geometry}
 
-%%  Set double-spacing for the whole document   
+%%	Set double-spacing for the whole document		
 \RequirePackage{setspace}
   \setstretch{2.1}
 
 
-%%  Set fonts
+%%	Set fonts
   \usepackage{fontspec}
   \usepackage{xunicode}
   \defaultfontfeatures{Mapping=tex-text} % To support LaTeX quoting style
@@ -90,24 +90,24 @@
 
 %%New Title Page
 \renewcommand{\maketitle}{%
-  \thispagestyle{empty}
-  \setcounter{page}{0}
-  \begin{center}
-    \singlespace
-    \vspace*{1in}
-    \MakeUppercase \@title
-    \vfill
-    by\\[1em]
-    \@author\\[2in]
-    A paper submitted in partial fulfillment of\\
-        the requirements for\\ \@coursenumber{} \@coursetitle\\
-      \@professor \\[1in]
-  \singlespacing  \@institution\\
+	\thispagestyle{empty}
+	\setcounter{page}{0}
+	\begin{center}
+		\singlespace
+		\vspace*{1in}
+		\MakeUppercase \@title
+		\vfill
+		by\\[1em]
+		\@author\\[2in]
+		A paper submitted in partial fulfillment of\\
+    		the requirements for\\ \@coursenumber{} \@coursetitle\\
+    	\@professor \\[1in]
+	\singlespacing 	\@institution\\
   \@address\\
   \@date
-  \end{center}
-  \section*{\@title}
-  }
+	\end{center}
+	\section*{\@title}
+	}
 
 \def\title#1{\gdef\@title{#1}}
 \def\@title{Title of Paper}
