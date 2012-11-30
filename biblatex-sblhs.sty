@@ -18,7 +18,7 @@
 
 
 %% Adds support for "Shortjournal" field in footnote styles
-\newbibmacro*{journal+sub}{%
+\renewbibmacro*{journal+sub}{%
   \ifboolexpr {
     test
       {\ifcitation}
@@ -35,15 +35,15 @@
 
 %% Adds Support for "Shortseries" field in footnote styles
 \renewbibmacro*{ser+num}{%
-  \ifboolexpr {
+  \ifboolexpr{
     test
       {\ifcitation}
     and not test
-    {\iffieldundef {shortseries}}
-  }
-  {\printfield[series]{shortseries}}
-  {\iffieldundef{series}}
-  {}
-  {\printfield{series}}
+      {\iffieldundef{shortseries}}
+    }
+  {\printfield[series]{shortseries}%
   \printfield[sernum]{number}%
-  \newunit}
+  \newunit}%
+  {\printfield{series}%
+  \printfield[sernum]{number}%
+  \newunit}}
