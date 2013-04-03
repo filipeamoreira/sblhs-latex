@@ -1,5 +1,10 @@
 \ProvidesPackage{sblhs-languages}[2012/10/12 v.01 Language support]
 
 
-  \newfontfamily\hebrewfont[Script=Hebrew,Contextuals=Alternate,Ligatures=Required]{SBL Hebrew}
+  \newfontfamily\hebrewfont[%
+  		Script=Hebrew,Contextuals=Alternate,Ligatures=Required]{SBL Hebrew}
   \newcommand{\he}[1]{{\hebrewfont #1}}
+
+  \newfontfamily\copticfont[%
+  		Script=Coptic,Contextuals=Alternate,Ligatures=Required]{Antinoou}
+  \newcommand{\cp}[1]{{\copticfont #1}}

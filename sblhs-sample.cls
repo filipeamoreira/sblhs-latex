@@ -22,9 +22,9 @@
 %%	Set page geometry, margins, etc.
   \RequirePackage[letterpaper,margin=.9in,]{geometry}
 
-%%	Set double-spacing for the whole document		
+%%	Set double-spacing for the whole document
 \RequirePackage{setspace}
-  \setstretch{2.1}
+  \setstretch{2.0}
 
 
 %%	Set fonts
