@@ -14,36 +14,4 @@
 \setlength{\footnotesep}{18pt}
 
 % Fixes footnote indents to .5in
-\renewcommand\@makefntext[1]{\hskip.5in\@makefnmark#1}
-
-
-%% Adds support for "Shortjournal" field in footnote styles
-\renewbibmacro*{journal+sub}{%
-  \ifboolexpr {
-    test
-      {\ifcitation}
-    and not test
-    {\iffieldundef {shortjournal}}
-  }
-  {\printfield[journaltitle]{shortjournal}}
-  {\iffieldundef{journaltitle}
-    {}
-    {\printtext[journaltitle]{%
-       \printfield[noformat]{journaltitle}%
-       \setunit{\addcolon\addspace}%
-       \printfield[noformat]{journalsubtitle}}}}}
-
-%% Adds Support for "Shortseries" field in footnote styles
-\renewbibmacro*{ser+num}{%
-  \ifboolexpr{
-    test
-      {\ifcitation}
-    and not test
-      {\iffieldundef{shortseries}}
-    }
-  {\printfield[series]{shortseries}%
-  \printfield[sernum]{number}%
-  \newunit}%
-  {\printfield{series}%
-  \printfield[sernum]{number}%
-  \newunit}}
+\renewcommand\@makefntext[1]{\hskip.5in\@thefnmark.\space#1}

@@ -24,7 +24,7 @@
 %% \let\footnotesize
 
 %%  Set page geometry, margins, etc.
-  \RequirePackage[letterpaper,margin=0.9in,inner=1.5in]{geometry}
+  \RequirePackage[letterpaper,margin=1in,inner=1.5in]{geometry}
 
 %%  Set double-spacing for the whole document
 \RequirePackage{setspace}
@@ -43,10 +43,10 @@
 
 % Set Ragged Right
 % Ragged right settings
-\RequirePackage{ragged2e}
-\setlength\RaggedRightParindent{.5in}
-\setlength\RaggedRightRightskip{2pt plus 1fil}
-\RaggedRight
+  \RequirePackage{ragged2e}
+  \setlength\RaggedRightParindent{.5in}
+  \setlength\RaggedRightRightskip{2pt plus 1fil}
+  \RaggedRight
 
 %More Reasonable Quote Environment
 \renewenvironment{quote}
