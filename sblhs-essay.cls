@@ -20,9 +20,9 @@
   \LoadClass[12pt]{article}
 
 %%  Set page geometry, margins, etc.
-  \RequirePackage[letterpaper,margin=.9in,]{geometry}
+  \RequirePackage[letterpaper,margin=1in,]{geometry}
 
-%%  Set double-spacing for the whole document   
+%%  Set double-spacing for the whole document
 \RequirePackage{setspace}
   \setstretch{2.1}
 

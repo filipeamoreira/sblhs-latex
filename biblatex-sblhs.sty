@@ -7,11 +7,11 @@
 
 
 %%Rename Bibliography
-\defbibheading{bibliography}{\chapter*{Bibliography}}
+\defbibheading{bibliography}{\clearpage\center\uppercase{Bibliography}\\[12pt]}
 
 
 %% Footnote Separation
 \setlength{\footnotesep}{18pt}
 
-% Fixes footnote indents to .5in
+% Fixes footnote indents to .5in and makes number regular size
 \renewcommand\@makefntext[1]{\hskip.5in\@thefnmark.\space#1}

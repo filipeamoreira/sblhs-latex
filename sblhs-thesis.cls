@@ -24,7 +24,7 @@
 %% \let\footnotesize
 
 %%  Set page geometry, margins, etc.
-  \RequirePackage[letterpaper,margin=1in,inner=1.5in]{geometry}
+  \RequirePackage[letterpaper,margin=1.075in,inner=1.5in]{geometry}
 
 %%  Set double-spacing for the whole document
 \RequirePackage{setspace}
@@ -35,7 +35,7 @@
   \usepackage{fontspec}
   \usepackage{xunicode}
   \defaultfontfeatures{Mapping=tex-text} % To support LaTeX quoting style
-  \setromanfont{Linux Libertine}
+  \setmainfont[Ligatures=TeX]{Linux Libertine}
 
 %% Include lanuguage support
 \RequirePackage{sblhs-languages}
@@ -92,12 +92,13 @@
   \begin{center}
     \singlespace
     \vspace*{1in}
-    \MakeUppercase \@title
+    \MakeUppercase \@title\\
+    \@subtitle
     \vfill
     by\\[12pt]
     \@author\\[0.75in]
-    A thesis submitted in partial fulfillment of the requirements for the degree of\\
-    \@degree{}\\[1in]
+    A thesis submitted in partial fulfillment of the requirements\\
+    for the degree of \@degree{}\\[1in]
     Area of \@area{}\\[0.25in]
   \singlespacing  \@institution\\
   \@address\\[0.75in]
@@ -108,6 +109,8 @@
 
 \def\title#1{\gdef\@title{#1}}
 \def\@title{Title of Paper}
+\def\subtitle#1{\gdef\@subtitle{#1}}
+\def\@subtitle{Subtitle}
 \def\author#1{\gdef\@author{#1}}
 \def\@author{[Your name]}
 
@@ -120,3 +123,6 @@
 \def\@institution{[Name of Institution]}
 \def\address#1{\gdef\@address{#1}}
 \def\@address{[City, State]}
+
+\widowpenalty10000
+\clubpenalty10000
