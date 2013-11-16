@@ -87,6 +87,10 @@
 %Bibliography Style (based on biblatex-chicago)
 \RequirePackage{biblatex-sblhs}
 
+%%Rename Bibliography
+\defbibheading{bibliography}{\clearpage\center\uppercase{Bibliography}\\[12pt]}
+
+
 %%New Title Page
 \renewcommand{\maketitle}{%
   \thispagestyle{empty}
