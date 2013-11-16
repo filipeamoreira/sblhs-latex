@@ -60,21 +60,30 @@
 
 
 % Section headings
-  % Chapter
-  \titleformat{\chapter}[display]{\normalfont\filcenter}{\MakeUppercase{Chapter \thechapter:}}{1ex}{}[]
-  \titlespacing{\chapter}{0ex}{0ex}{0pt}[0ex]
-
-  % Section
-  \titleformat{\section}[block]{\normalfont\bfseries\filcenter}{\thesection}{2ex}{}[]
-  \titlespacing{\section}{0ex}{0ex}{0pt}[0ex]
-
-  % Subsection
-  \titleformat{\subsection}[block]{\normalfont\it}{\thesubsection}{1ex}{}[]
-  \titlespacing{\subsection}{0ex}{0ex}{0pt}[0ex]
-
-  % Subsubsection
-  \titleformat{\subsubsection}[block]{\normalfont\it}{\thesubsubsection}{1ex}{}[]
-  \titlespacing{\subsubsection}{0ex}{0ex}{0pt}[0ex]
+\renewcommand\part{\@startsection {part}{0}{\z@}%
+  {6pt\@plus -1ex \@minus -.2ex}%
+  {12pt \@minus -.2ex}%
+  {\clearpage\centering\singlespacing\vspace*{66pt}\MakeUppercase}}
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {6pt\@plus -1ex \@minus -.2ex}%
+  {0.5ex \@plus .2ex}%
+  {\clearpage\centering\singlespacing\vspace*{66pt}\MakeUppercase}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {6pt \@plus -1ex \@minus -.2ex}%
+  {0.5ex \@plus .2ex}%
+  {\centering\bfseries\itshape}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {6pt \@plus -1ex \@minus -.2ex}%
+  {0.5ex \@plus .2ex}%
+  {\flushleft\singlespacing\bfseries\itshape}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {6pt \@plus -1ex \@minus -.2ex}%
+  {0.5ex \@plus .2ex}%
+  {\flushleft\singlespacing}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
+  {6pt \@plus -1ex \@minus -.2ex}%
+  {0.5ex \@plus .2ex}%
+  {\em}}
 
 %Bibliography Style (based on biblatex-chicago)
 \RequirePackage{biblatex-sblhs}
