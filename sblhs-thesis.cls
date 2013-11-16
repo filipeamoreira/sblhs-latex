@@ -39,6 +39,8 @@
 
 %% Include lanuguage support
 \RequirePackage{sblhs-languages}
+%%Rename Bibliography
+\defbibheading{bibliography}{\section*{Bibliography}}
 
 
 % Set Ragged Right
