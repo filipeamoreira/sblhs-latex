@@ -33,16 +33,15 @@
   \defaultfontfeatures{Mapping=tex-text} % To support LaTeX quoting style
   \setromanfont{Linux Libertine}
 
-%% Include lanuguage support
-\RequirePackage{sblhs-languages}
-
-
 % Set Ragged Right
 % Ragged right settings
 \RequirePackage{ragged2e}
 \setlength\RaggedRightParindent{.5in}
 \setlength\RaggedRightRightskip{2pt plus 1fil}
 \RaggedRight
+
+%% Include lanuguage support
+\RequirePackage{sblhs-languages}
 
 %More Reasonable Quote Environment
 \renewenvironment{quote}
