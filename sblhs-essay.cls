@@ -66,15 +66,15 @@
 \renewcommand\section{\@startsection {section}{1}{\z@}%
   {6pt\@plus -1ex \@minus -.2ex}%
   {0.5ex \@plus .2ex}%
-  {\clearpage\centering\singlespacing\vspace*{66pt}\MakeUppercase}}
+  {\flushleft\singlespacing\bfseries}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
   {6pt \@plus -1ex \@minus -.2ex}%
   {0.5ex \@plus .2ex}%
-  {\centering\bfseries\itshape}}
+  {\flushleft\singlespacing\itshape}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
   {6pt \@plus -1ex \@minus -.2ex}%
   {0.5ex \@plus .2ex}%
-  {\flushleft\singlespacing\bfseries\itshape}}
+  {\flushleft\singlespacing\MakeUppercase}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
   {6pt \@plus -1ex \@minus -.2ex}%
   {0.5ex \@plus .2ex}%
@@ -88,7 +88,7 @@
 \RequirePackage{biblatex-sblhs}
 
 %%Rename Bibliography
-\defbibheading{bibliography}{\section*{Bibliography}}
+\defbibheading{bibliography}{\part*{Bibliography}}
 
 %%New Title Page
 \renewcommand{\maketitle}{%
@@ -108,7 +108,7 @@
   \@address\\
   \@date
   \end{center}
-  \section*{\@title}
+  \part*{\@title}
   }
 
 \def\title#1{\gdef\@title{#1}}
